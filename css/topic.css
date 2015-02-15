@@ -1,0 +1,16 @@
+
+#svgTopic {
+  margin: auto;
+  display: block;
+}
+
+#svgTopic text:hover {
+  opacity: .7 !important;
+}
+
+#doc-text {
+    font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+    padding-left: 20px;
+    height: 800px;
+    overflow: auto; /* or hidden */
+}

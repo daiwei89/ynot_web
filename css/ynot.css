@@ -1,0 +1,6 @@
+#svgMap {
+    width: 100%;
+    padding: 0 0;
+    background: url("../img/campus_map.png") no-repeat bottom center scroll;
+    /*background-color: #cccccc;*/
+}

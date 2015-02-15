@@ -121,6 +121,7 @@ styles: [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"colo
       setTimeout(draw, i * activityInterval * 1000);  // *1000 to convert to millisecond.
 
 
+      for (var j = 0; j < numFriends; j++) {
       // Show pings every pingInterval seconds.
       setTimeout( function() {
         var activityCoord = activityCoords[getRandomInt(0, numActiveCircles - 1)];
@@ -130,6 +131,7 @@ styles: [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"colo
             map: map,
             icon: markerPaths[getRandomInt(0, numFriends - 1)]
         });
-      }, (i + 0.5) * pingInterval * 1000);  // *1000 to convert to millisecond.
+      }, (i + 0.5 + j * 0.1) * pingInterval * 1000);  // *1000 to convert to millisecond.
+}
     }
 }

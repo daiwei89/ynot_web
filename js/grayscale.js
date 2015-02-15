@@ -87,7 +87,7 @@ styles: [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"colo
     var activityRangeY = 0.01,    // range of activity from the center of map (y axis).
         activityRangeX = 0.02,    // x axis
         radiusRange = 20,   // circle radius range.
-        pingRange = 0.00001;  // ping around activity circles.
+        pingRange = 0.0005;  // ping around activity circles.
 
     var activityInterval = 1;  // seconds
     var pingInterval = 1;  // seconds

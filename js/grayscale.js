@@ -38,7 +38,7 @@ function init() {
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
     var mapOptions = {
         // How zoomed in you want the map to start at (always required)
-        zoom: 15,
+        zoom: 16,
 
         // The latitude and longitude to center the map (always required)
         center: new google.maps.LatLng(40.4448158,-79.9399407), // CMU
@@ -84,9 +84,9 @@ styles: [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"colo
     function getRandomInt(min, max) {
         return Math.floor(Math.random() * (max - min + 1)) + min;
     }
-    var activityRangeY = 0.02,    // range of activity from the center of map (y axis).
-        activityRangeX = 0.04,    // x axis
-        radiusRange = 50,   // circle radius range.
+    var activityRangeY = 0.01,    // range of activity from the center of map (y axis).
+        activityRangeX = 0.02,    // x axis
+        radiusRange = 20,   // circle radius range.
         pingRange = 0.00001;  // ping around activity circles.
 
     var activityInterval = 1;  // seconds
@@ -110,7 +110,7 @@ styles: [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"colo
                fillOpacity: 0.35,
                map: map,
                center: new google.maps.LatLng(activityCoord[0], activityCoord[1]),
-               radius: 100 + getRandomArbitrary(-radiusRange, radiusRange)  // in meters
+               radius: 50 + getRandomArbitrary(-radiusRange, radiusRange)  // in meters
         };
           circleArray.push(new google.maps.Circle(activityOptions));
         }

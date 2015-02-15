@@ -94,7 +94,7 @@ styles: [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"colo
     var numActiveCircles  = 20;
     var numFriends = markerPaths.length;
     var circleArray = [];
-    var numActiveCircles = 25;   // large number to simulate many circles.
+    var numActiveCircles = 50;   // large number to simulate many circles.
     var activityCoords = [];
     for (var j = 0; j < numActiveCircles; j++) {
       activityCoords.push([40.4448158 + getRandomArbitrary(-activityRangeY, activityRangeY), -79.9399407 + getRandomArbitrary(-activityRangeX, activityRangeX)]);
